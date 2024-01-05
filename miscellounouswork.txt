@@ -1,0 +1,104 @@
+## Deployment Address
+Address: 0x27E0E912327533C8cc9D10F2c6699433E0E88183
+PrvKey: 0xe3ed634c75658987b0cb6fa90b79fa8ffd5720d5c41779b4c39749a4308f5abc
+mnemonic: "party scissors grit neglect cheese awake draft boil space famous trap link"
+keystore: {"address":"27e0e912327533c8cc9d10f2c6699433e0e88183","id":"ad4fae95-3259-46bc-9ce9-091c5cfda7e7","version":3,"crypto":{"cipher":"aes-128-ctr","cipherparams":{"iv":"d3ef5c16d77764bec5600814d4e6e2a2"},"ciphertext":"95472d1332af0a6738d7b675052d4630947b213b22350ae7c645e6ba94749c01","kdf":"scrypt","kdfparams":{"salt":"a4174c96f98ec501f645d488efcc44d9c28961133cb7b5184a2b2f6ccbba0062","n":131072,"dklen":32,"p":1,"r":8},"mac":"675a27b160ad12223408b41eacdc93466e9e07555f84ff0ad1ac535e15b1e8e8"},"x-ethers":{"client":"ethers.js","gethFilename":"UTC--2023-12-10T11-14-56.0Z--27e0e912327533c8cc9d10f2c6699433e0e88183","mnemonicCounter":"fffff30fd3d93bb94a397d3c74d6f2d6","mnemonicCiphertext":"c8e766134e5214805fdbe5877e874f6f","path":"m/44'/60'/0'/0/0","locale":"en","version":"0.1"}}
+\n\n## Trusted sequencer
+Address: 0xC64aaBd2e15bC88C077e17C48A910df54C401C7a
+PrvKey: 0xafe4629f5004176046b757b0726a4bd78c33264eb7719503c7dd79cfbb50abf1
+mnemonic: "smooth female order visual pact runway cargo census material hero potato record"
+keystore: {"address":"c64aabd2e15bc88c077e17c48a910df54c401c7a","id":"7860879a-8703-4497-98ae-7fdef685c051","version":3,"crypto":{"cipher":"aes-128-ctr","cipherparams":{"iv":"5f48d836fd2843dedad11c3f126f0468"},"ciphertext":"3c086fb5fb6be5200817237e844cb63b848a60fb990713b325b0ac852efd49a9","kdf":"scrypt","kdfparams":{"salt":"fcb3434823c2498af30dbcff83a6e88ef33dd97b333a814a55ac3d2f933d1202","n":131072,"dklen":32,"p":1,"r":8},"mac":"49199f35cab1b39dffec2026eb467dc4317f080c566205b0321786fdab01cdc5"},"x-ethers":{"client":"ethers.js","gethFilename":"UTC--2023-12-10T11-14-57.0Z--c64aabd2e15bc88c077e17c48a910df54c401c7a","mnemonicCounter":"79b60a38f67380890b00248c58b70424","mnemonicCiphertext":"678456e11c4457e9ca1c7f94626c23b7","path":"m/44'/60'/0'/0/0","locale":"en","version":"0.1"}}
+\n\n## Trusted aggregator
+Address: 0x8CC0f353fcff209497d15EE919e63295bD1Af37E
+PrvKey: 0xf8a8e17eeadffde5939ba294f45c3c31472dbff0a9930ab4a011d63afbe34445
+mnemonic: "drastic cream uniform come flower artefact three crouch celery library black improve"
+keystore: {"address":"8cc0f353fcff209497d15ee919e63295bd1af37e","id":"1ddeabd2-49c9-4078-b743-4001590fba37","version":3,"crypto":{"cipher":"aes-128-ctr","cipherparams":{"iv":"365f9695f9b77893cc158f5c5816fc41"},"ciphertext":"ba9b95fefd098236acde7eda06ad0675cb78c03bd88c605015e712a6f5c58a4a","kdf":"scrypt","kdfparams":{"salt":"5966ea06840a40145bcd23097b4e53e039bc9d7b4501629cdad34ab16d719439","n":131072,"dklen":32,"p":1,"r":8},"mac":"d2224b4c669587eff52b2ceaee8eab01fa914a4f7229b0af257930f09593831c"},"x-ethers”:{“client":"ethers.js","gethFilename":"UTC--2023-12-10T11-14-58.0Z--8cc0f353fcff209497d15ee919e63295bd1af37e","mnemonicCounter":"c7a55bb9bb9e5f8ef461b4646599d8ad","mnemonicCiphertext":"c98a444887e26ece52a398c1559c2d56","path":"m/44'/60'/0'/0/0","locale":"en","version":"0.1"}}
+
+
+Sequencer key using - ——————0xd8Fe84fEfCA052A850EF9Eb8BFEcDeE3ecB2Df5c
+
+cdk-validium-sequence-sender
+
+cdk-validium-aggregator
+
+Sequencer.keystore
+Genesis file last m
+
+Test.keystore.claimtx
+
+[SequenceSender]
+WaitPeriodSendSequence = "15s"
+LastBatchVirtualizationTimeMaxWaitPeriod = "10s"
+MaxTxSizeForL1 = 131072
+L2Coinbase = "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+PrivateKey = {Path = "/pk/sequencer.keystore", Password = "testonly"}
+
+Aggregator address using ———————— 0x85C10b6D7508cDAF69D9a6C9277406D659B2c551
+
+dac-setup-committee-mock-l1
+
+dac-setup-committee-sepolia
+
+
+Aggregator keystore file
+
+Test.dac.memeber.keystore
+
+[Aggregator]
+Host = "0.0.0.0"
+Port = 50081
+RetryTime = "5s"
+VerifyProofInterval = "10s"
+TxProfitabilityCheckerType = "acceptall"
+TxProfitabilityMinReward = "1.1"
+ProofStatePollingInterval = "5s"
+SenderAddress = "0x70997970c51812dc3a010c7d01b50e0d17dc79c8"
+CleanupLockedProofsInterval = "2m"
+GeneratingProofCleanupThreshold = "10m"
+
+
+
+
+
+docker-compose -f docker-compose.yml up -d cdk-validium-approve
+
+
+
+
+
+{
+ "cdkValidiumAddress": "0x0DCd1Bf9A1b36cE34237eEaFef220932846BCD82",
+ "polygonZkEVMBridgeAddress": "0x4C739372258826995C302CD655beE12689B97d3F",
+ "polygonZkEVMGlobalExitRootAddress": "0xB7f8BC63BbcaD18155201308C8f3540b07f84F5e",
+ "cdkDataCommitteeContract": "0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6",
+ "maticTokenAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+ "verifierAddress": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+ "cdkValidiumDeployerContract": "0x8a655d3956Bc5D2BCB78EBc9997e8D776D03E37e",
+ "deployerAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+ "timelockContractAddress": "0x0B306BF915C4d645ff596e518fAf3F9669b97016",
+ "deploymentBlockNumber": 80,
+ "genesisRoot": "0xd88680f1b151dd67518f9aca85161424c0cac61df2f5424a3ddc04ea25adecc7",
+ "trustedSequencer": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+ "trustedSequencerURL": "http://cdk-validium-json-rpc:8123",
+ "chainID": 1001,
+ "networkName": "cdk-validium",
+ "admin": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+ "trustedAggregator": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+ "proxyAdminAddress": "0xC0BeC0ae448bAD01171919437833647a16df68B7",
+ "forkID": 5,
+ "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
+ "version": "0.0.1"
+}
+
+//=——————————————————
+
+0x34C13B52bDf8C7763F5De93E9F4EC08883e90caE
+
+docker run -d -v .:/key hermeznetwork/zkevm-node /app/zkevm-node encryptKey --pk 0xe3ed634c75658987b0cb6fa90b79fa8ffd5720d5c41779b4c39749a4308f5abc --pw testonly -o /key
+
+
+
+$(MAKE) run-node
+    $(MAKE) run-dac
+    $(MAKE) run-bridge
+    $(MAKE) run-l2-explorer

@@ -1,0 +1,53 @@
+[Log]
+Level = "debug"
+Outputs = ["stdout"]
+
+[SyncDB]
+Database = "postgres"
+User = "test_user"
+Password = "test_password"
+Name = "test_db"
+Host = "zkevm-bridge-db"
+Port = "5432"
+MaxConns = 200
+
+[ClaimTxManager]
+Enabled = true
+FrequencyToMonitorTxs = "1s"
+PrivateKey = {Path = "/pk/keystore.claimtxmanager", Password = "testonly"}
+RetryInterval = "1s"
+RetryNumber = 10
+
+[Etherman]
+L1URL = "https://sepolia.infura.io/v3/2dda643294d74a10bc9bf2fdcf85e8f5"
+L2URLs = ["http://cdk-validium-json-rpc:8123"]
+
+[Synchronizer]
+SyncInterval = "1s"
+SyncChunkSize = 100
+
+[BridgeController]
+Store = "postgres"
+Height = 32
+
+[BridgeServer]
+GRPCPort = "9090"
+HTTPPort = "8080"
+CacheSize = 100000
+DefaultPageLimit = 25
+MaxPageLimit = 100
+BridgeVersion = "v1"
+    [BridgeServer.DB]
+    Database = "postgres"
+    User = "test_user"
+    Password = "test_password"
+    Name = "test_db"
+    Host = "zkevm-bridge-db"
+    Port = "5432"
+    MaxConns = 200
+
+[NetworkConfig]
+GenBlockNumber = 4859235
+PolygonBridgeAddress = "0x34C13B52bDf8C7763F5De93E9F4EC08883e90caE"
+PolygonZkEVMGlobalExitRootAddress = "0xb7740e8E974FcF724c0C9BecCB487e7F00402E26"
+L2PolygonBridgeAddresses = ["0x34C13B52bDf8C7763F5De93E9F4EC08883e90caE"]

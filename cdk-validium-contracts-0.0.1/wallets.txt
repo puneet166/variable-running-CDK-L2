@@ -1,0 +1,15 @@
+## Deployment Address
+Address: 0x2581b1A54FeBfe443b8D9628D55328744c43A5B7
+PrvKey: 0x25145e9146fc2ce539d185e4d5c5fb7de0b646f649d248cb493df44a3a393cda
+mnemonic: "mom boring fluid stone gift provide east faint purity torch paddle dream"
+keystore: {"address":"2581b1a54febfe443b8d9628d55328744c43a5b7","id":"430ad588-046e-404f-8b76-6474a4c68470","version":3,"crypto":{"cipher":"aes-128-ctr","cipherparams":{"iv":"7bc17605c4c51abeb802a9da30da05c7"},"ciphertext":"53199c5562c14a44ad96f159ec22b00c4608f792e041dcd995b3ccbfdda0c596","kdf":"scrypt","kdfparams":{"salt":"a9fc2188292657ea9e7e3ae4b2498cf47db9149564603f6878f7a333cd23255f","n":131072,"dklen":32,"p":1,"r":8},"mac":"f6c1108bf445218a34a3580b9479897772c8e1355fda4a3d33e8720d13f3a897"},"x-ethers":{"client":"ethers.js","gethFilename":"UTC--2023-12-07T06-54-11.0Z--2581b1a54febfe443b8d9628d55328744c43a5b7","mnemonicCounter":"15b63aa546a70182ac28b6600bb6edc4","mnemonicCiphertext":"bc40a5693327920adc42f0daafd284b3","path":"m/44'/60'/0'/0/0","locale":"en","version":"0.1"}}
+\n\n## Trusted sequencer
+Address: 0x57ACa77204Ae3e89Bd878c138688A197B78D7aE8
+PrvKey: 0xe780e1a87d3e5f2fa46af2a11f7d35d76de7a3f78f157f6734848c9e11c6b412
+mnemonic: "common stereo gloom crazy horse decide ring input liquid music glue present"
+keystore: {"address":"57aca77204ae3e89bd878c138688a197b78d7ae8","id":"781270d0-f084-4eac-ad2f-fe87c0d88803","version":3,"crypto":{"cipher":"aes-128-ctr","cipherparams":{"iv":"be25eb84a8009d12240f27a176431669"},"ciphertext":"37094eee763800e0c19e33de2ae4b84b44d70fa16926cb1d725ae5e200f620b4","kdf":"scrypt","kdfparams":{"salt":"d398005f8599330f5dd1ce21d06741a9aa5808d281db055b90809f6e4094a3af","n":131072,"dklen":32,"p":1,"r":8},"mac":"c0fc4340902f46fc4e01ec2e1743555d288bf216c815b56a7765f5ec42146b15"},"x-ethers":{"client":"ethers.js","gethFilename":"UTC--2023-12-07T06-54-11.0Z--57aca77204ae3e89bd878c138688a197b78d7ae8","mnemonicCounter":"b51bb01de5f2fe15edca015d036ac70d","mnemonicCiphertext":"73a065929f128d367e5a5c2c80c90a29","path":"m/44'/60'/0'/0/0","locale":"en","version":"0.1"}}
+\n\n## Trusted aggregator
+Address: 0xe10fb50D4BEC62772b0fC6Af5b2e8a57DC6A456A
+PrvKey: 0xd91e8a3e14ee9b3f3a8b6e8436c283b0866dd8876dd2c340ad0ee4b2cb356747
+mnemonic: "engine input space recycle tank under wonder glue spoil drama bright rich"
+keystore: {"address":"e10fb50d4bec62772b0fc6af5b2e8a57dc6a456a","id":"52b85446-b7d4-42e0-bb60-a1c0c4547664","version":3,"crypto":{"cipher":"aes-128-ctr","cipherparams":{"iv":"e2a0fc3146b88081f4e59202e1f23f57"},"ciphertext":"a0b8b84cb7b5a4d2a973a04bafae3b960c2e73d439b7077b510b0fd6084b6ecf","kdf":"scrypt","kdfparams":{"salt":"151f33d3dd52e82ff2d9567eede157e36da979ad84ec4d903dd39ee0969d8a21","n":131072,"dklen":32,"p":1,"r":8},"mac":"929a4fbdcffc8a51bcb3737a7c289bea6b6e20657a3561582bea43892fd414ce"},"x-ethers":{"client":"ethers.js","gethFilename":"UTC--2023-12-07T06-54-12.0Z--e10fb50d4bec62772b0fc6af5b2e8a57dc6a456a","mnemonicCounter":"552423199331069d85424300ef567187","mnemonicCiphertext":"34b7928692370b900a39a5b1f6bc7c50","path":"m/44'/60'/0'/0/0","locale":"en","version":"0.1"}}
