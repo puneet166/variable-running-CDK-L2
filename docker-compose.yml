@@ -441,7 +441,7 @@ services:
 
   zkevm-bridge-service:
     container_name: zkevm-bridge-service
-    image: hermeznetwork/zkevm-bridge-service:v0.2.0
+    image: hermeznetwork/zkevm-bridge-service:latest
     ports:
       - 8080:8080
       - 9090:9090
@@ -469,7 +469,7 @@ services:
     depends_on:
       - zkevm-bridge-service
     environment:
-      - ETHEREUM_RPC_URL=https://sepolia.infura.io/v3/2dda643294d74a10bc9bf2fdcf85e8f5
+      - ETHEREUM_RPC_URL=https://powerful-aged-asphalt.ethereum-sepolia.quiknode.pro/c098b6f06418c7a2e872d7ddf99fe756a613257a
       - ETHEREUM_EXPLORER_URL=https://sepolia.etherscan.io/
       - ETHEREUM_BRIDGE_CONTRACT_ADDRESS=0x34C13B52bDf8C7763F5De93E9F4EC08883e90caE
       - ETHEREUM_FORCE_UPDATE_GLOBAL_EXIT_ROOT=true
