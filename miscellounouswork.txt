@@ -102,3 +102,10 @@ $(MAKE) run-node
     $(MAKE) run-dac
     $(MAKE) run-bridge
     $(MAKE) run-l2-explorer
+
+
+npm i 
+npm i @openzeppelin/hardhat-upgrades
+npm i @openzeppelin/contracts-upgradeable
+npm run deploy:deployer:CDKValidium:sepolia
+npm run deploy:testnet:CDKValidium:sepolia
