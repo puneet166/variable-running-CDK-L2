@@ -19,7 +19,7 @@ RetryInterval = "1s"
 RetryNumber = 10
 
 [Etherman]
-L1URL = "https://sepolia.infura.io/v3/2dda643294d74a10bc9bf2fdcf85e8f5"
+L1URL = "https://powerful-aged-asphalt.ethereum-sepolia.quiknode.pro/c098b6f06418c7a2e872d7ddf99fe756a613257a"
 L2URLs = ["http://cdk-validium-json-rpc:8123"]
 
 [Synchronizer]
